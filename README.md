@@ -20,7 +20,7 @@ pragma mark--发送消息
 
     Person  *p=[[Person alloc] init];
 
-    [p eat];
+[p eat];
     
     //运行机制  最主要消息机制
     
@@ -30,7 +30,7 @@ pragma mark--发送消息
 
 //    p  performSelector:<#(SEL)#> withObject:<#(id)#>
 
-     [p eat];
+[p eat];
      
     [p performSelector:@selector(eat)];
     
