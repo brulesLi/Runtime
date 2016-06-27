@@ -17,8 +17,7 @@ pragma mark--发送消息
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
     Person  *p=[[Person alloc] init];
 
     [p eat];
@@ -30,7 +29,9 @@ pragma mark--发送消息
 //    SEL 方法编号 根据方法标号找到对应 方法实现
 
 //    p  performSelector:<#(SEL)#> withObject:<#(id)#>
+
      [p eat];
+     
     [p performSelector:@selector(eat)];
     
     //运行时 发送消息  谁做事情就那谁
