@@ -3,15 +3,15 @@
 runtime  
 //导入运行框架
 //Build  Setting  ->搜索msg  -->  设置为NO
-1#import "Person.h"
-1#import "ViewController.h"
+import "Person.h"
+import "ViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-#pragma mark--发送消息
+pragma mark--发送消息
 
 - (void)viewDidLoad {
     [super viewDidLoad];
