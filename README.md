@@ -3,8 +3,8 @@
 runtime  
 //导入运行框架
 //Build  Setting  ->搜索msg  -->  设置为NO
-#import "Person.h"
-#import "ViewController.h"
+1#import "Person.h"
+1#import "ViewController.h"
 
 @interface ViewController ()
 
@@ -53,7 +53,7 @@ runtime
 
 
 #import <AVFoundation/AVFoundation.h>
-#import <Foundation/Foundation.h>
+import <Foundation/Foundation.h>
 
 @interface Person : NSObject
 +(void)eat;
@@ -78,10 +78,12 @@ runtime
 }
 
 
-方法交换
+
+
+#方法交换
 //
-#import "UIImage+image.h"
-#import "VCViewController.h"
+import "UIImage+image.h"
+import "VCViewController.h"
 
 @interface VCViewController ()
 
