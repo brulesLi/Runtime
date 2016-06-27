@@ -4,6 +4,7 @@ runtime
 //导入运行框架
 //Build  Setting  ->搜索msg  -->  设置为NO
 import "Person.h"
+
 import "ViewController.h"
 
 @interface ViewController ()
@@ -11,6 +12,7 @@ import "ViewController.h"
 @end
 
 @implementation ViewController
+
 pragma mark--发送消息
 
 - (void)viewDidLoad {
@@ -18,15 +20,19 @@ pragma mark--发送消息
     // Do any additional setup after loading the view, typically from a nib.
     
     Person  *p=[[Person alloc] init];
+
     [p eat];
     
     //运行机制  最主要消息机制
+    
     //什么是消息机制 任何方法调用 都是发送消息
     
 //    SEL 方法编号 根据方法标号找到对应 方法实现
+
 //    p  performSelector:<#(SEL)#> withObject:<#(id)#>
      [p eat];
     [p performSelector:@selector(eat)];
+    
     //运行时 发送消息  谁做事情就那谁
     
     //Xcode5之后不建议使用底层方法
@@ -90,8 +96,15 @@ import "VCViewController.h"
 @end
 
 @implementation VCViewController
-#pragma mark--交换方法
-#pragma mark 在原有方法添加更多东西
+
+
+pragma mark--交换方法
+
+
+pragma mark 在原有方法添加更多东西
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -114,7 +127,7 @@ import "VCViewController.h"
 
 
 #import "UIImage+image.h"
-#import <objc/message.h>
+import <objc/message.h>
 
 @implementation UIImage (image)
 //运行时
